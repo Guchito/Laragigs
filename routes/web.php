@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ListingController;
 use App\Models\Listing;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ListingController;
 
 //All listing
 Route::get('/', [ListingController::class, 'index']);
@@ -29,3 +30,20 @@ Route::get('/listings/{listing}', [ListingController::class, 'show']);
 // It has to be at the end of the route list
 // because it is a wildcard route and will catch all requests
 // that are not matched by the previous routes
+
+//USERS CONTROLLER
+
+//show register/create form
+Route::get('/register', [UserController::class, 'create']);
+
+//Create new user
+Route::post('/users', [UserController::class, 'store']);
+
+//Logout user
+Route::post('/logout', [UserController::class, 'logout']);
+
+//Show login form
+Route::get('/login', [UserController::class, 'login'])->name('login');
+
+//Login user
+Route::post('/users/authenticate', [UserController::class, 'authenticate']);
