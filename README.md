@@ -34,7 +34,6 @@ This is a simple job listing app built with Laravel and Tailwind CSS.
 - Composer
 - NPM
 
-/*************  ✨ Windsurf Command ⭐  *************/
 ## Contributing
 
 We welcome contributions to this project! Please follow these steps to contribute:
@@ -52,4 +51,3 @@ Please ensure your code follows the project's coding style and includes appropri
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-/*******  781fdedf-5391-44c1-9571-fff8c42b1977  *******/
