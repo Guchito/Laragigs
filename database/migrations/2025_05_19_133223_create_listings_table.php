@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('listings', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            // This will create a foreign key constraint on the user_id column
             $table->string('title');
             $table->string('tags');
             $table->string('company');
