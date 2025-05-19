@@ -1,4 +1,4 @@
-/*************  ✨ Windsurf Command ⭐  *************/
+
 # Job Listing App
 
 This is a simple job listing app built with Laravel and Tailwind CSS.
