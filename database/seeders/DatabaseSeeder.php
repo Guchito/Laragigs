@@ -48,7 +48,6 @@ class DatabaseSeeder extends Seeder
             'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, voluptatem.'
         ]);
         */
-        Listing::factory(6)->create();
-    
+
         }
 }
