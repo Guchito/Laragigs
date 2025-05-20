@@ -19,10 +19,13 @@ This is a simple job listing app built with Laravel and Tailwind CSS.
 1. Clone the repository
 2. Run `composer install`
 3. Run `npm install`
-4. Run `php artisan migrate`
+4. Copy `.env.example`
 5. Run `php artisan key:generate`
-6. Run `npm run dev`
-7. Open your web browser and navigate to `http://localhost:8000` to see the app in action
+6. Setup your DB
+7. Run `php artisan migrate`
+8. If you want dummy data for the DB, run `php artisan db:seed`
+9. Run `php artisan serve`
+10. Open your web browser and navigate to `http://localhost:8000` to see the app in action
 
 ## Technologies Used
 
