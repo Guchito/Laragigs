@@ -48,10 +48,10 @@
                 <li>
                     <form action="/logout" method="POST" class="inline">
                         @csrf
-                        <button 
-                            type="submit" 
+                        <button
+                            type="submit"
                             class="hover:text-laravel group"
-                            onmouseover="this.querySelector('i').classList.replace('fa-door-open', 'fa-door-closed')" 
+                            onmouseover="this.querySelector('i').classList.replace('fa-door-open', 'fa-door-closed')"
                             onmouseout="this.querySelector('i').classList.replace('fa-door-closed', 'fa-door-open')"
                         >
                             <i class="fa-solid fa-door-open transition-all"></i> Logout
@@ -79,7 +79,7 @@
         <footer
             class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
         >
-            <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+            <p class="ml-2">Copyright &copy; {{ now()->year }}, All Rights reserved</p>
 
             <a
                 href="/listings/create"
